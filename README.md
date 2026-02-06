@@ -1,7 +1,7 @@
 # Weaver
 Official PyTorch code of "Weaver: End-to-End Agentic System Training for Video Interleaved Reasoning", Arxiv.
 
-[[Project page]](https://zhengrongz.github.io/Weaver/) [[Paper]](https://arxiv.org/abs/2412.01694)
+[[Project page]](https://zhengrongz.github.io/Weaver/) [[Paper]](https://arxiv.org/abs/2602.05829)
 
 
 ## 🔥News
@@ -14,7 +14,7 @@ If you find this paper useful, please consider staring this repo and citing our 
 @article{shi2026weaver,
   title={Weaver: End-to-End Agentic System Training for Video Interleaved Reasoning},
   author={Shi, Yudi and Di, Shangzhe and Chen, Qirui and Wang, Qinian and Cai, Jiayin and Jiang, Xiaolong and Hu, Yao and Xie, Weidi},
-  journal={arXiv preprint arXiv:2602.xxxxx},
+  journal={arXiv preprint arXiv:2602.05829},
   year={2026}
 }
 ```
