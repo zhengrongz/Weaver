@@ -1,10 +1,11 @@
 # Weaver
-Official PyTorch code of "Weaver: End-to-End Agentic System Training for Video Interleaved Reasoning", Arxiv.
+Official PyTorch code of "Weaver: End-to-End Agentic System Training for Video Interleaved Reasoning", CVPRF 2026.
 
 [[Project page]](https://zhengrongz.github.io/Weaver/) [[Paper]](https://arxiv.org/abs/2602.05829)
 
 
 ## 🔥News
+* **[2026.4.23]** Weaver has been accepted to **CVPR 2026 Findings**!
 * **[2026.2.6]** Weaver is released to Arxiv! Code is in progress, please stay tuned!
 
 
