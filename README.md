@@ -57,6 +57,7 @@ The config file [`tools/train_tools_config.json`](tools/train_tools_config.json)
 
 ### Stage 0: Data
 Please download the data first and put it at the right place and modify the corresponding scripts to load the data.
+It is noted that the raw videos need to be downloaded from the raw project pages.
 
 ### Stage 1: SFT
 
