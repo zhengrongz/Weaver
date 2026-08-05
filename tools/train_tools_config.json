@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Temporal",
+        "path": "UniTime",
+        "conda_env": "tools",
+        "gpu_ids": "0,1,2",
+        "port": 9995,
+        "app_module": "multi_deploy:app",
+        "workers": 1,
+        "logfile": "Temporal_rl.log",
+        "env": {
+            "UNITIME_FINETUNE_PATH": "path/to/UniTime",
+            "UNITIME_BASE_PATH": "Qwen/Qwen2-VL-7B-Instruct",
+            "UNITIME_FEATURE_ROOT": "path/to/tmp_features",
+            "UNITIME_TOOL_DIR": "tools/UniTime"
+        }
+    },
+    {
+        "name": "Tracking",
+        "path": "GroundedSAM2",
+        "conda_env": "tools",
+        "gpu_ids": "6",
+        "port": 9999,
+        "app_module": "multi_deploy:app",
+        "workers": 1,
+        "logfile": "Tracking_rl.log",
+        "env": {
+            "SAM2_CHECKPOINT": "path/to/sam2.1_hiera_large.pt",
+            "SAM2_MODEL_CFG": "path/to/sam2.1_hiera_l.yaml",
+            "GROUNDING_DINO_MODEL_ID": "path/to/grounding-dino-base",
+            "GROUNDEDSAM2_TOOL_DIR": "tools/GroundedSAM2"
+        }
+    },
+    {
+        "name": "Qwen",
+        "path": "Qwen",
+        "conda_env": "tools",
+        "gpu_ids": "3,4,5",
+        "port": 9997,
+        "app_module": "multi_deploy:app",
+        "workers": 1,
+        "logfile": "Qwen_rl.log",
+        "env": {
+            "QWEN_MODEL_PATH": "Qwen/Qwen2.5-VL-7B-Instruct"
+        }
+    },
+    {
+        "name": "SpatialGrounding",
+        "path": "GroundingDINO",
+        "conda_env": "tools",
+        "gpu_ids": "7",
+        "port": 9998,
+        "app_module": "multi_deploy:app",
+        "workers": 1,
+        "logfile": "SpatialGrounding_rl.log",
+        "env": {
+            "GROUNDING_DINO_MODEL_ID": "path/to/grounding-dino-base",
+            "BOX_THRESHOLD": "0.35",
+            "TEXT_THRESHOLD": "0.25",
+            "FRAME_STRIDE": "1"
+        }
+    }
+]

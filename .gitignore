@@ -1,0 +1,109 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# ── Distribution / packaging ──────────────────────────────────────────────────
+*.egg-info/
+*.egg
+MANIFEST
+.eggs/
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+__pypackages__/
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# ── Jupyter / IPython ─────────────────────────────────────────────────────────
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ── Type checkers ─────────────────────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.spyderproject
+.spyproject
+.ropeproject
+
+# ── Logs / outputs ────────────────────────────────────────────────────────────
+*.log
+logs/
+output/
+outputs/
+responses/
+wandb/
+runs/
+
+# ── Model checkpoints & large data files ─────────────────────────────────────
+# Uncomment if you do NOT want to track checkpoints in git:
+# rl_checkpoints/
+# *.bin
+# *.safetensors
+# *.pt
+# *.pth
+# *.ckpt
+
+# ── Video / image artifacts ───────────────────────────────────────────────────
+tmp/
+tmp_feature/
+vis/
+subs/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.spec
+*.manifest
+pip-log.txt
+pip-delete-this-directory.txt
+celerybeat-schedule
+celerybeat.pid
+*.sage.py
+.python-version
+/site

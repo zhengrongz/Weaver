@@ -1,0 +1,87 @@
+name: tools
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    # ── Web / API ──────────────────────────────────────────────────────────────
+    - fastapi==0.117.1
+    - starlette==0.48.0
+    - uvicorn==0.36.0
+    - python-multipart==0.0.20
+    - h11==0.16.0
+    - anyio==4.10.0
+    - sniffio==1.3.1
+    - exceptiongroup==1.3.0
+
+    # ── ML / Training ──────────────────────────────────────────────────────────
+    # NOTE: torch / torchvision / torchaudio / flash_attn / triton need CUDA.
+    #       Install them separately via install_tools_gpu_packages.sh on a GPU machine.
+    - transformers==4.50.0
+    - tokenizers==0.21.4
+    - safetensors==0.6.2
+    - accelerate==1.0.1
+    - peft==0.14.0
+    - huggingface-hub==0.35.0
+    - hf-xet==1.1.10
+    - einops==0.8.1
+
+    # ── Config / Hydra ─────────────────────────────────────────────────────────
+    - hydra-core==1.3.2
+    - omegaconf==2.3.0
+    - antlr4-python3-runtime==4.9.3
+
+    # ── Vision / Video ─────────────────────────────────────────────────────────
+    - pillow==11.0.0
+    - opencv-python-headless==4.11.0.86
+    - matplotlib==3.10.6
+    - contourpy==1.3.2
+    - cycler==0.12.1
+    - fonttools==4.60.0
+    - kiwisolver==1.4.9
+    - pyparsing==3.2.5
+    - decord==0.6.0
+    - av==16.0.1
+    - ffmpeg-python==0.2.0
+    - iopath==0.1.10
+    - portalocker==3.2.0
+
+    # ── Numerics / Scientific ──────────────────────────────────────────────────
+    - numpy==2.1.2
+    - sympy==1.13.1
+    - mpmath==1.3.0
+    - networkx==3.3
+
+    # ── Pydantic / Validation ──────────────────────────────────────────────────
+    - pydantic==2.11.9
+    - pydantic_core==2.33.2
+    - annotated-types==0.7.0
+    - typing_extensions==4.12.2
+    - typing-inspection==0.4.1
+
+    # ── Utilities ──────────────────────────────────────────────────────────────
+    - tqdm==4.67.1
+    - click==8.3.0
+    - filelock==3.13.1
+    - packaging==25.0
+    - PyYAML==6.0.2
+    - requests==2.32.5
+    - urllib3==2.5.0
+    - certifi==2025.8.3
+    - charset-normalizer==3.4.3
+    - idna==3.10
+    - six==1.17.0
+    - future==1.0.0
+    - python-dateutil==2.9.0.post0
+    - psutil==7.1.0
+    - regex==2025.9.18
+    - fsspec==2024.6.1
+    - Jinja2==3.1.4
+    - MarkupSafe==2.1.5
+    - setuptools==78.1.1
+    - wheel==0.45.1
+
+    # ── qwen-vl-utils (PyPI version, not local editable) ──────────────────────
+    - qwen-vl-utils==0.0.14
